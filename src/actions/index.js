@@ -1,1 +1,1 @@
-export { getJokes, upvoteJoke } from './jokeActions';
+export { getJokes, upvoteJoke, getCharacters, setCharacters, upvoteCharacter } from './jokeActions';

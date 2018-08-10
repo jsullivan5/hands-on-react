@@ -1,29 +1,25 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import JokeList from '../JokeList/JokeList';
+import CharacterList from '../CharacterList/CharacterList';
 import './App.css';
 
 
 class App extends Component {
-  state = {
-    jokes: [],
-  }
-
   componentDidMount() {
-    this.props.getJokes(5);
+    this.props.getCharacters();
   }
 
   render() {
-    const { jokes, upvoteJoke } = this.props;
+    const { characters, upvoteCharacter } = this.props;
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-          <JokeList
-            jokes={jokes}
-            upvoteJoke={upvoteJoke}
+          <CharacterList
+            characters={characters}
+            upvoteCharacter={upvoteCharacter}
           />
       </div>
     );

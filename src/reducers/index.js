@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import { jokes } from './jokeReducer'
+import { characters } from './charactersReducer';
 
 export default combineReducers({
-  jokes,
+  characters,
 });
