@@ -1,22 +1,24 @@
-export const characters = (state = [], action) => {
+import { SET_CHARACTERS, UPVOTE_CHARACTER } from '../actions';
+
+const upvoteCharacter = (state, character) => {
+  const newState = [...state];
+  const index = newState.indexOf(character);
+
+  if (newState[index].voteCount) {
+    newState[index].voteCount += 1;
+  } else {
+    newState[index].voteCount = 1;
+  }
+  return newState.sort((a, b) => a.voteCount < b.voteCount);
+};
+
+export default (state = [], action) => {
   switch (action.type) {
-    case 'SET_CHARACTERS':
+    case SET_CHARACTERS:
       return action.payload;
-    case 'UPVOTE_CHARACTER':
-      const newState = [...state];
-      return upvoteCharacter(newState, action.payload);
+    case UPVOTE_CHARACTER:
+      return upvoteCharacter(state, action.payload);
     default:
       return state;
   }
 };
-
-function upvoteCharacter(state, character) {
-  const index = state.indexOf(character);
-
-  if (state[index].voteCount) {
-    state[index].voteCount++
-  } else {
-    state[index].voteCount = 1;
-  }
-  return state.sort((a, b) => a.voteCount < b.voteCount);
-}

@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { characters } from './charactersReducer';
+import characters from './charactersReducer';
 
 export default combineReducers({
   characters,

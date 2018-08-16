@@ -11,7 +11,7 @@ render(
   <Provider store={store}>
     <AppContainer />
   </Provider>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );
 
 registerServiceWorker();
