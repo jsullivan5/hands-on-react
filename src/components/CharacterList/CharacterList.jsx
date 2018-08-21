@@ -30,11 +30,11 @@ const CharacterList = ({ characters, upvoteCharacter }) => (
 
 CharacterList.propTypes = {
   characters: PropTypes.arrayOf(PropTypes.object),
-  upvoteCharacter: PropTypes.func.isRequired,
+  upvoteCharacter: PropTypes.func.isRequired
 };
 
 CharacterList.defaultProps = {
-  characters: [],
+  characters: []
 };
 
 export default CharacterList;

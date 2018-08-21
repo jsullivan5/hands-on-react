@@ -1,9 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import store from './store';
-import AppContainer from './App/AppContainer';
-import registerServiceWorker from './registerServiceWorker';
+
+import store from './store/store';
+import { AppContainer } from './containers/containers';
+import registerServiceWorker from './config/registerServiceWorker';
 
 import './index.css';
 
