@@ -1,6 +1,4 @@
-import { characterActions } from '../../actions/actions';
-
-const { SET_CHARACTERS, UPVOTE_CHARACTER } = characterActions;
+import { SET_CHARACTERS, UPVOTE_CHARACTER } from '../../actions/constants';
 
 const upvoteCharacter = (state, character) => {
   const newState = [...state];

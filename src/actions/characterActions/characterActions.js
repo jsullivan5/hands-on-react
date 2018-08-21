@@ -1,5 +1,7 @@
-export const SET_CHARACTERS = 'SET_CHARACTERS';
-export const UPVOTE_CHARACTER = 'UPVOTE_CHARACTER';
+import {
+  SET_CHARACTERS,
+  UPVOTE_CHARACTER
+} from '../constants';
 
 export const setCharacters = characters => ({
   type: SET_CHARACTERS,

@@ -5,9 +5,12 @@ import {
   setCharacters,
   upvoteCharacter,
   getCharacters,
+} from './characterActions';
+
+import {
   SET_CHARACTERS,
   UPVOTE_CHARACTER,
-} from '../actions';
+} from '../constants';
 
 describe('characterActions', () => {
   describe('setCharacters', () => {
