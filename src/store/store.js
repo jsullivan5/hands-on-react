@@ -1,7 +1,8 @@
 /* eslint-disable no-underscore-dangle */
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import rootReducer from '../reducers/index';
+
+import rootReducer from '../reducers/reducers';
 
 const initialState = {};
 const enhancers = [];
