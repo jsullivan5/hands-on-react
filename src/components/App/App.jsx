@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 import { CharacterList } from '../components';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+class App extends PureComponent {
 
   static propTypes = {
     getCharacters: PropTypes.func.isRequired,
