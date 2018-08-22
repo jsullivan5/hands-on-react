@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import logo from './logo.svg';
-import CharacterList from '../CharacterList/CharacterList';
 
+import { CharacterList } from '../components';
+import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+class App extends PureComponent {
+
   static propTypes = {
     getCharacters: PropTypes.func.isRequired,
     upvoteCharacter: PropTypes.func.isRequired,
-    characters: PropTypes.arrayOf(PropTypes.object),
+    characters: PropTypes.arrayOf(PropTypes.object)
   };
 
   static defaultProps = { characters: [] };
@@ -33,6 +34,7 @@ class App extends Component {
       </div>
     );
   }
+
 }
 
 export default App;

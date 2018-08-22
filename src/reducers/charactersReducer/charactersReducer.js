@@ -1,4 +1,4 @@
-import { SET_CHARACTERS, UPVOTE_CHARACTER } from '../actions';
+import { SET_CHARACTERS, UPVOTE_CHARACTER } from '../../actions/constants';
 
 const upvoteCharacter = (state, character) => {
   const newState = [...state];
@@ -6,7 +6,8 @@ const upvoteCharacter = (state, character) => {
 
   if (newState[index].voteCount) {
     newState[index].voteCount += 1;
-  } else {
+  }
+  else {
     newState[index].voteCount = 1;
   }
   return newState.sort((a, b) => a.voteCount < b.voteCount);

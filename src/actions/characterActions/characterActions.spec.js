@@ -1,12 +1,16 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
+
 import {
   setCharacters,
   upvoteCharacter,
   getCharacters,
+} from './characterActions';
+
+import {
   SET_CHARACTERS,
   UPVOTE_CHARACTER,
-} from '.';
+} from '../constants';
 
 describe('characterActions', () => {
   describe('setCharacters', () => {
