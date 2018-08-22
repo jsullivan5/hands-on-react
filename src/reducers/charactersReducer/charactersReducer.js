@@ -1,6 +1,6 @@
 import { SET_CHARACTERS, UPVOTE_CHARACTER } from '../../actions/constants';
 
-const upvoteCharacter = (state, character) => {
+export const upvoteCharacter = (state, character) => {
   const newState = [...state];
   const index = newState.indexOf(character);
 
