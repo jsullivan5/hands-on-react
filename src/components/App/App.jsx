@@ -6,11 +6,10 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends PureComponent {
-
   static propTypes = {
     getCharacters: PropTypes.func.isRequired,
     upvoteCharacter: PropTypes.func.isRequired,
-    characters: PropTypes.arrayOf(PropTypes.object)
+    characters: PropTypes.arrayOf(PropTypes.object),
   };
 
   static defaultProps = { characters: [] };
@@ -34,7 +33,6 @@ class App extends PureComponent {
       </div>
     );
   }
-
 }
 
 export default App;

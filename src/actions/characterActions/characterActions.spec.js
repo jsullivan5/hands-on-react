@@ -7,10 +7,7 @@ import {
   getCharacters,
 } from './characterActions';
 
-import {
-  SET_CHARACTERS,
-  UPVOTE_CHARACTER,
-} from '../constants';
+import { SET_CHARACTERS, UPVOTE_CHARACTER } from '../constants';
 
 describe('characterActions', () => {
   describe('setCharacters', () => {

@@ -6,8 +6,7 @@ const upvoteCharacter = (state, character) => {
 
   if (newState[index].voteCount) {
     newState[index].voteCount += 1;
-  }
-  else {
+  } else {
     newState[index].voteCount = 1;
   }
   return newState.sort((a, b) => a.voteCount < b.voteCount);
