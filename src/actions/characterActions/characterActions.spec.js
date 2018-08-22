@@ -12,7 +12,7 @@ import { SET_CHARACTERS, UPVOTE_CHARACTER } from '../constants';
 describe('characterActions', () => {
   describe('setCharacters', () => {
     it('should return the correct action', () => {
-      const mockPayload = 'Luke SkyKnocker';
+      const mockPayload = 'Luke SkyBlocker';
       expect(setCharacters(mockPayload)).toEqual({
         type: SET_CHARACTERS,
         payload: mockPayload,
@@ -21,7 +21,7 @@ describe('characterActions', () => {
   });
   describe('upvoteCharacter', () => {
     it('should return the correct action', () => {
-      const mockPayload = ['Luke SkyKnocker', 'Dark Bader'];
+      const mockPayload = ['Luke SkyBlocker', 'Dark Bader'];
       expect(upvoteCharacter(mockPayload)).toEqual({
         type: UPVOTE_CHARACTER,
         payload: mockPayload,

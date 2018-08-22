@@ -1,4 +1,4 @@
-import charactersReducer, { upvoteCharacter } from './charactersReducer';
+import charactersReducer from './charactersReducer';
 import { SET_CHARACTERS, UPVOTE_CHARACTER } from '../../actions/constants';
 
 describe('charactersReducer', () => {
