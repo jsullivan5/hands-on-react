@@ -1,2 +1,2 @@
-export { default as App } from './App/App.jsx';
-export { default as CharacterList } from './CharacterList/CharacterList.jsx';
+export { default as App } from './App/App';
+export { default as CharacterList } from './CharacterList/CharacterList';

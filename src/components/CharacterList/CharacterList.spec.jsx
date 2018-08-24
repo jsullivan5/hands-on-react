@@ -11,7 +11,7 @@ describe('<CharacterList />', () => {
     props = {
       characters: [
         {
-          name: 'Fluke SkyKnocker',
+          name: 'Fluke SkyBlocker',
           voteCount: 0,
         },
         {

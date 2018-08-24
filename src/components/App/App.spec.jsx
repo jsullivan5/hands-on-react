@@ -12,7 +12,7 @@ describe('<App />', () => {
       upvoteCharacter: jest.fn(),
       characters: [
         {
-          name: 'Fluke SkyKnocker',
+          name: 'Fluke SkyBlocker',
         },
         {
           name: 'Dark Vader',

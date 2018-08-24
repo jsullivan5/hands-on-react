@@ -23,7 +23,8 @@ module.exports = {
     'import/no-named-as-default': ['off'],
     "jsx-a11y/href-no-hash": "off",
     "react/destructuring-assignment": ["off"],
-    "import/no-cycle": ["off"]
+    "import/no-cycle": ["off"],
+    "import/prefer-default-export": ["off"]
   },
   settings: {
     'import/resolver': { node: { paths: 'src/' } },
