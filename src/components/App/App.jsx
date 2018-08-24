@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import { CharacterList } from '../components';
+import { ErrorBoundary, CharacterList } from '../components';
 import logo from './logo.svg';
 import './App.css';
 
@@ -21,16 +21,20 @@ class App extends PureComponent {
   render() {
     const { characters, upvoteCharacter } = this.props;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <CharacterList
-          characters={characters}
-          upvoteCharacter={upvoteCharacter}
-        />
-      </div>
+      <ErrorBoundary
+        render={() => <h1 className="error">Oops... Something went wrong.</h1>}
+      >
+        <div className="App">
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <h1 className="App-title">Welcome to React</h1>
+          </header>
+          <CharacterList
+            characters={characters}
+            upvoteCharacter={upvoteCharacter}
+          />
+        </div>
+      </ErrorBoundary>
     );
   }
 }

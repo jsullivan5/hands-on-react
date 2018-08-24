@@ -1,7 +1,7 @@
 import { SET_CHARACTERS, UPVOTE_CHARACTER } from '../../actions/constants';
 
 export const upvoteCharacter = (state, character) => {
-  const newState = [...state];
+  const newState = [].concat(state);
   const index = newState.indexOf(character);
 
   if (newState[index].voteCount) {
